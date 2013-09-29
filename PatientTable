@@ -11,13 +11,19 @@ public class PatientTable <E extends Comparable<? super E>> extends AbstractSet<
     
     
     public PatientTable(NewPatient x){
-        add(x);
+        for (int i = 0; i < con.size(); i++){
+        if (!(con.get(i).PatientID == x.PatientID))
+            con.add(x);
+        }
     }
     
     
     //Add a new patient to the end of the array
     public void add(NewPatient x){
-        con.add(x);
+      for (int i = 0; i < con.size(); i++){
+        if (!(con.get(i).PatientID == x.PatientID))
+            con.add(x);
+        }
     }
     
     
