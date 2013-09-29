@@ -1,0 +1,10 @@
+
+import java.util.*;
+import java.io.*;
+
+/**
+ * An interface that models a set. 
+ * Sets have no implied order and duplicate items are not allowed.
+ */
+public interface ImplementationSet<E> {
+}
