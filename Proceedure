@@ -1,0 +1,27 @@
+import java.text.DateFormat;
+
+public class Procedures {
+	String name;
+	String code;
+	double cost;
+	
+	Procedures(String a, String b, int c){
+		name = a;
+		code = b;
+		cost = c;
+		
+	}
+	
+	public String Name(){
+		return name;
+	}
+	
+	public String Code(){
+		return code;
+	}
+	
+	public double Cost(){
+		return cost;
+	}
+	
+}
