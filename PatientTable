@@ -9,20 +9,24 @@ public class PatientTable <E extends Comparable<? super E>> extends AbstractSet<
         
     }
     
+    
     public PatientTable(NewPatient x){
         add(x);
     }
+    
     
     //Add a new patient to the end of the array
     public void add(NewPatient x){
         con.add(x);
     }
     
+    
     //Remove a patient using a NewPatient Object
     public void remove(NewPatient x){
         
         
     }
+    
     
     //Search the array for a unique ID, then remove
     public void remove(String UniqueID){
