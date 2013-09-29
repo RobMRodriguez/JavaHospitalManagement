@@ -1,0 +1,49 @@
+import java.util.*;
+import java.io.*;
+
+
+public class Patient <E extends Comparable<? super E>> extends AbstractSet<E>{
+    
+    String PatientNum;
+    String FirstName;
+    String LastName;
+    String DOB;
+    int Age;
+    int patientID;
+    public Patient(String a, String b, String c, String d, int e){
+        PatientNum = a;
+        FirstName = b;
+        LastName = c;
+        DOB = d;
+        Age = e;
+        
+        Random r = new Random();
+        patientID = r.nextInt(8999) + 1000;
+    }
+    
+    public String PatientID(){
+     return patientID;
+    }
+    
+    public String PatientNum(){
+        return PatientNum;
+    }
+    
+    public String FirstName(){
+        return FirstName;
+    }
+    
+    public String LastName(){
+        return LastName;
+    }
+    
+    public String DOB(){
+        return DOB;
+    }
+    
+    public int Age(){
+        return Age;
+    }
+   
+    
+}
