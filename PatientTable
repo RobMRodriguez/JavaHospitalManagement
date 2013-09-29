@@ -27,8 +27,8 @@ public class PatientTable <E extends Comparable<? super E>> extends AbstractSet<
         
     }
     
-    
-    //Search the array for a unique ID, then remove
+    //Search the array for a unique ID, then remove 
+    //test
     public void remove(String UniqueID){
         
     }
